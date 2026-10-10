@@ -1,0 +1,54 @@
+# Avantage de la maison : la chance réelle = (valeur mise / valeur cible) * (1 - house-edge)
+house-edge: 0.10
+
+# Une cible n'est proposée que si sa chance est >= min-chance
+min-chance: 0.03
+# Chance maximale affichée/appliquée (jamais de 100% garanti)
+max-chance: 0.90
+# La cible ne peut pas valoir plus de X fois la mise
+max-ratio: 20.0
+# Valeur minimale de la mise (évite le spam avec de la terre)
+min-stake-value: 4.0
+# Secondes entre deux lancers par joueur
+cooldown-seconds: 3
+# Accepter les objets nommés/enchantés/avec données ? (false = recommandé)
+allow-item-meta: false
+
+# Valeurs calculées automatiquement depuis les recettes quand l'objet n'est pas dans values.yml
+auto-values:
+  enabled: true
+  # >1 = crafter "coûte" un peu plus cher (ex. 1.05)
+  craft-multiplier: 1.0
+
+# Objets totalement exclus (ni mise, ni cible)
+blacklist:
+  - BEDROCK
+  - BARRIER
+  - DRAGON_EGG
+  - ELYTRA
+  - TOTEM_OF_UNDYING
+  - NETHER_STAR
+  - BEACON
+  - ENCHANTED_GOLDEN_APPLE
+  - TRIDENT
+  - HEART_OF_THE_SEA
+  - ECHO_SHARD
+  - SPAWNER
+  - TRIAL_SPAWNER
+  - VAULT
+  - REINFORCED_DEEPSLATE
+  - DEBUG_STICK
+  - KNOWLEDGE_BOOK
+# Tout objet dont le nom contient un de ces morceaux est exclu
+blacklist-contains:
+  - SPAWN_EGG
+  - COMMAND_BLOCK
+  - STRUCTURE
+  - JIGSAW
+  - HEAD
+  - SKULL
+  - LIGHT
+  - POTTERY_SHERD
+  - ARMOR_TRIM
+  - MUSIC_DISC
+  - BANNER_PATTERN

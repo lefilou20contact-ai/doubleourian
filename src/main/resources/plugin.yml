@@ -1,0 +1,17 @@
+name: "DoubleOuRien"
+version: "1.0.0"
+main: "fr.doubleourien.DoubleOuRienPlugin"
+api-version: "26.2"
+description: "Quitte ou double façon upgrader, avec prix configurables."
+commands:
+  dor:
+    description: "Ouvre le Double ou Rien"
+    usage: "/dor [reload|value|setvalue|give]"
+    aliases: [doubleourien]
+permissions:
+  doubleourien.use:
+    description: "Utiliser le Double ou Rien"
+    default: true
+  doubleourien.admin:
+    description: "Gérer les prix, recharger, donner l'objet"
+    default: op

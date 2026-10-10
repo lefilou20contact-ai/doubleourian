@@ -1,0 +1,57 @@
+# Valeur de chaque objet. Modifie à la main ou avec /dor setvalue <ITEM> <valeur>
+# Valeur 0 ou négative = objet interdit.
+# Les objets absents sont calculés depuis leurs recettes (si auto-values.enabled).
+values:
+  DIRT: 0.5
+  COBBLESTONE: 1
+  SAND: 1
+  GRAVEL: 1
+  OAK_LOG: 4
+  SPRUCE_LOG: 4
+  BIRCH_LOG: 4
+  JUNGLE_LOG: 4
+  ACACIA_LOG: 4
+  DARK_OAK_LOG: 4
+  CHERRY_LOG: 4
+  MANGROVE_LOG: 4
+  STICK: 1
+  COAL: 8
+  COPPER_INGOT: 6
+  IRON_INGOT: 20
+  GOLD_INGOT: 40
+  REDSTONE: 6
+  LAPIS_LAZULI: 8
+  QUARTZ: 10
+  AMETHYST_SHARD: 10
+  DIAMOND: 200
+  EMERALD: 120
+  NETHERITE_SCRAP: 600
+  GLOWSTONE_DUST: 8
+  STRING: 4
+  BONE: 4
+  FEATHER: 2
+  LEATHER: 6
+  ROTTEN_FLESH: 1
+  SPIDER_EYE: 4
+  GUNPOWDER: 10
+  ENDER_PEARL: 60
+  BLAZE_ROD: 50
+  SLIME_BALL: 20
+  WHEAT: 2
+  BEEF: 3
+  PORKCHOP: 3
+  CHICKEN: 3
+  MUTTON: 3
+  CARROT: 2
+  POTATO: 2
+  SUGAR_CANE: 2
+  CLAY_BALL: 2
+  OBSIDIAN: 25
+  NETHERRACK: 0.5
+  END_STONE: 2
+  PRISMARINE_SHARD: 8
+  PRISMARINE_CRYSTALS: 10
+  INK_SAC: 3
+  EGG: 2
+  APPLE: 4
+  GOLDEN_APPLE: 340
