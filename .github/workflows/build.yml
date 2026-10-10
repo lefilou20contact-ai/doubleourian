@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+
+      - name: Compiler
+        run: mvn -B -ntp package
+
+      - name: Publier le jar (artefact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: DoubleOuRien
+          path: target/DoubleOuRien.jar
+
+      # Si tu pousses un tag (ex. v1.0.0), le jar est ajouté à une Release GitHub
+      - name: Créer la Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: target/DoubleOuRien.jar
